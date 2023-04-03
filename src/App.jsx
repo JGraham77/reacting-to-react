@@ -31,7 +31,7 @@ const App = () => {
             <Greeter phrase='Welcome Mr.' name='Josh' />
             <Greeter phrase='Hello there' name='Andrew' />
             <Greeter phrase='Glad you are here' name='Mitzi' />
-            <input type="text" placeholder='Username' onChange={e => setUsername(e.target.value)} />
+            <input type="text" placeholder='Username' value={username} onChange={e => setUsername(e.target.value)} />
             <p>You are logging in as: {username}</p>
         </div>
     )
